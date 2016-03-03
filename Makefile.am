@@ -1,19 +1,19 @@
 
-#All exported headers
-nobase_include_HEADERS = sonic/sdi_register_common_api.h sonic/sdi_register_eeprom_api.h \
-                        sonic/sdi_register_fantray_api.h sonic/util.h
+
+#The sdi-device_drivers library
+lib_LTLIBRARIES = libsonic_sdi_device_drivers.la
+
+libsonic_sdi_device_drivers_la_SOURCES = src/sdi_eeprom.c src/sdi_onie_eeprom.c src/sdi_dell_eeprom.c \
+                                         src/sdi_cpld.c src/sdi_cpld_pin.c src/sdi_cpld_pin_group.c \
+                                         src/sdi_io_bus.c src/sdi_i2cmux_pin.c src/sdi_tmp75.c src/sdi_emc142x.c \
+                                         src/sdi_max6699.c src/sdi_max6620.c src/sdi_emc2305.c src/sdi_mono_color_pin_led.c \
+                                         src/sdi_seven_segment_pin_led.c src/sdi_pmbus_dev.c src/sdi_s6k_psu.c src/sdi_pseudo_bus.c \
+                                         src/sdi_qsfp.c src/sdi_qsfp_eeprom.c src/sdi_sfp.c src/sdi_sfp_eeprom.c \
+                                         src/sys-interface-drivers/sdi_i2cdev.c src/sys-interface-drivers/sdi_gpio.c \
+                                         src/sys-interface-drivers/sdi_sysfs_gpio_helpers.c
 
 
-#The sdi-sys library
-lib_LTLIBRARIES = libsonic_sdi_sys.la
-
-libsonic_sdi_sys_la_SOURCES = src/sdi_entity.c src/sdi_entity_framework.c \
-                              src/sdi_entity_info.c src/sdi_entity_reset.c \
-                              src/sdi_fan.c src/sdi_led.c src/sdi_media.c src/sdi_startup.c \
-                              src/sdi_thermal.c
-
-
-libsonic_sdi_sys_la_LDFLAGS = -lsonic_sdi_framework -lsonic_common -lsonic_logging -lpthread -lrt
-libsonic_sdi_sys_la_CFLAGS = -I$(top_srcdir)/sonic  -I$(includedir)/sonic  -I$(includedir)/sonic/private
+libsonic_sdi_device_drivers_la_LDFLAGS = -lsonic_sdi_framework -lsonic_open_common -lsonic_common -lsonic_logging -lpthread -lrt
+libsonic_sdi_device_drivers_la_CFLAGS = -I$(top_srcdir)/sonic  -I$(includedir)/sonic  -I$(includedir)/sonic/linux -I$(includedir)/sonic/eeprom
 
 

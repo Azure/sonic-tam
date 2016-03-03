@@ -1,0 +1,12 @@
+Source: sonic-sdi-device-drivers-lib
+Section: net
+Priority: optional
+Maintainer: Dell <support@dell.com>
+
+Build-Depends: debhelper (>= 9), autotools-dev, dh-exec
+Standards-Version: 3.9.3
+Package: sonic-sdi-device-drivers-lib
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},sonic-common-utils-lib(<<2.0.0),sonic-common-utils-lib(>=1.0.0),sonic-logging-lib(<<2.0.0),sonic-logging-lib(>=1.0.0),sonic-open-source-common-lib(<<2.0.0),sonic-open-source-common-lib(>=1.0.0),sonic-sdi-framework-lib(<<2.0.0),sonic-sdi-framework-lib(>=1.0.0)
+Description: This package contains the device driver plugin to be used with sonic-sdi-sys package.
+

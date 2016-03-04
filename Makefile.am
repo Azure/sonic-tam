@@ -13,7 +13,7 @@ libsonic_sdi_device_drivers_la_SOURCES = src/sdi_eeprom.c src/sdi_onie_eeprom.c 
                                          src/sys-interface-drivers/sdi_sysfs_gpio_helpers.c
 
 
-libsonic_sdi_device_drivers_la_LDFLAGS = -lsonic_sdi_framework -lsonic_open_common -lsonic_common -lsonic_logging -lpthread -lrt
-libsonic_sdi_device_drivers_la_CFLAGS = -I$(top_srcdir)/sonic  -I$(includedir)/sonic  -I$(includedir)/sonic/linux -I$(includedir)/sonic/eeprom
+libsonic_sdi_device_drivers_la_LDFLAGS = -lsonic_sdi_framework -lsonic_common -lsonic_logging -lpthread -lrt
+libsonic_sdi_device_drivers_la_CFLAGS = -I$(top_srcdir)/sonic -I$(includedir)/sonic
 
 

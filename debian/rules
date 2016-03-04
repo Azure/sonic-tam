@@ -29,7 +29,7 @@ include /usr/share/dpkg/default.mk
 
 
 override_dh_gencontrol:
-	dh_gencontrol -psonic-sdi-device-drivers-lib
-       
+	dh_gencontrol -plibsonic-sdi-device-drivers0
+
 override_dh_auto_install:
 	dh_auto_install            

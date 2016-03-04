@@ -1,4 +1,4 @@
-sonic-sdi-device-drivers-lib (1.0.0) main; urgency=medium
+libsonic-sdi-device-drivers0 (1.0.0) main; urgency=medium
 
 	 * Initial release
 

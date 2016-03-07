@@ -1,4 +1,4 @@
-Source: libsonic-sdi-device-drivers0
+Source: sonic-sdi-device-drivers
 Section: net
 Priority: optional
 Maintainer: Dell <support@dell.com>

@@ -2,7 +2,8 @@ Source: sonic-sdi-device-drivers
 Section: net
 Priority: optional
 Maintainer: Dell <support@dell.com>
-Build-Depends: debhelper (>= 9), dh-autoreconf
+Build-Depends: debhelper (>= 9), dh-autoreconf, libsonic-common-dev,
+ libsonic-logging-dev, sonic-sdi-api-dev, libsonic-sdi-framework-dev
 Standards-Version: 3.9.3
 
 Package: libsonic-sdi-device-drivers0

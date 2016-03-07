@@ -7,6 +7,6 @@ Standards-Version: 3.9.3
 
 Package: libsonic-sdi-device-drivers0
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends},libsonic-common0,libsonic-logging0,libsonic-sdi-framework0
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: This package contains the device driver plugin to be used with sonic-sdi-sys package.
 

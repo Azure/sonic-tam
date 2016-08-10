@@ -5,6 +5,8 @@ Maintainer: Dell <support@dell.com>
 Build-Depends: debhelper (>= 9), dh-autoreconf, libsonic-common-dev,
  libsonic-logging-dev, sonic-sdi-api-dev, libsonic-sdi-sys-dev ,libsonic-sdi-framework-dev
 Standards-Version: 3.9.3
+Vcs-Browser: https://github.com/Azure/sonic-sdi-device-drivers
+Vcs-Git: https://github.com/Azure/sonic-sdi-device-drivers.git
 
 Package: libsonic-sdi-device-drivers1
 Architecture: any

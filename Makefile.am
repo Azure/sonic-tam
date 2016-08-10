@@ -11,5 +11,5 @@ libsonic_sdi_device_drivers_la_SOURCES = src/sdi_eeprom.c src/sdi_onie_eeprom.c 
                                          src/sys-interface-drivers/sdi_sysfs_gpio_helpers.c
 
 libsonic_sdi_device_drivers_la_CPPFLAGS = -I$(top_srcdir)/sonic -I$(includedir)/sonic
-libsonic_sdi_device_drivers_la_LDFLAGS = -version-info 1:1:0
+libsonic_sdi_device_drivers_la_LDFLAGS = -shared -version-info 1:1:0
 libsonic_sdi_device_drivers_la_LIBADD = -lsonic_sdi_framework -lsonic_common -lsonic_logging -lpthread -lrt -lm

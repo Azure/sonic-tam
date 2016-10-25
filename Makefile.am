@@ -1,3 +1,5 @@
+ACLOCAL_AMFLAGS=-I m4
+
 #The sdi-device_drivers library
 lib_LTLIBRARIES = libsonic_sdi_device_drivers.la
 

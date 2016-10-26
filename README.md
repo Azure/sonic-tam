@@ -4,9 +4,9 @@ This repo contains SDI device drivers for the SONiC project.
 
 Description
 -----------
-This repo creates library libsonicsdi_device_drivers.so that is loaded by the sonic-sdi-sys repo.  
+This repo creates library libsonic_sdi_device_drivers.so that is loaded by the sonic-sdi-sys repo.  
 
-This repository holds the drivers for various chips used on Dell hardware. The combination of the sonic-sdi-sys, sonic-sdi-framework and sonic-sdi-device-drivers provides a full implementaiton of the sonic-sdi-api.
+This repository holds the drivers for various chips used on Dell hardware. The combination of the sonic-sdi-sys, sonic-sdi-framework and sonic-sdi-device-drivers provides a full implementation of the sonic-sdi-api.
 
 Building
 --------

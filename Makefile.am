@@ -1,0 +1,1 @@
+SUBDIRS = proto tam thresholdmgr 
